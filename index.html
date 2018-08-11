@@ -1,39 +1,91 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>ckplayer简单调用演示</title>
+<meta charset="utf-8">
+<meta name="description" content="免费 Web & 编程 教程">
+<meta http-equiv="refresh" content="30">  <!-- 每30秒钟刷新当前页面 -->
+
+<title>菜鸟教程(runoob.com)</title>
+
+<style type="text/css">
+body
+{
+	background-color:#d0e4fe;
+}
+h1
+{
+	color:orange;
+	text-align:center;
+}
+p
+{
+	font-family:"Times New Roman";
+	font-size:20px;
+}
+</style>
 
 </head>
 
-<body>
-<div id="a1"></div>
+<body style="background-color:white;">
 
-<script type="text/javascript" src="ckplayer/ckplayer.js" charset="utf-8"></script>
-<script type="text/javascript">
-	var flashvars={
-		f:'http://img.ksbbs.com/asset/Mon_1605/0ec8cc80112a2d6.mp4',
-		c:0,
-		b:1,
-		i:'http://www.ckplayer.com/static/images/cqdw.jpg'
-		};
-	var params={bgcolor:'#FFF',allowFullScreen:true,allowScriptAccess:'always',wmode:'transparent'};
-	CKobject.embedSWF('ckplayer/ckplayer.swf','a1','ckplayer_a1','600','400',flashvars,params);
-	/*
-	CKobject.embedSWF(播放器路径,容器id,播放器id/name,播放器宽,播放器高,flashvars的值,其它定义也可省略);
-	下面三行是调用html5播放器用到的
-	*/
-	var video=['http://img.ksbbs.com/asset/Mon_1605/0ec8cc80112a2d6.mp4->video/mp4'];
-	var support=['iPad','iPhone','ios','android+false','msie10+false'];
-	CKobject.embedHTML5('a1','ckplayer_a1',600,400,video,flashvars,support);
+    <h1>我的第一个标题</h1>
+    <p>我的第一个段落。</p>
+	<h2 style="background-color:red;">这是一个标题</h2>
+    <p style="background-color:green;">这是一个段落。</p>
+
+	<hr>  <!-- 水平线 -->
+	<p>这个<br>段落<br>演示了分行的效果</p>
+    <a href="http://www.runoob.com">这是一个链接</a> 
 	
+	<a id="tips">有用的提示部分</a>
+	<!--   <a href="#tips">访问有用的提示部分</a>  -->
+	<a href="http://www.runoob.com/html/html-links.html#tips">
 	
-	function closelights(){//关灯
-		alert(' 本演示不支持开关灯');
-	}
-	function openlights(){//开灯
-		alert(' 本演示不支持开关灯');
-	}
-  </script>
+	<p>创建图片链接:
+    <a href="http://www.runoob.com/html/html-tutorial.html">
+    <img  border="10" src="smiley.gif" alt="HTML 教程" width="32" height="32"></a></p>
+	
+	<img src="http://www.runoob.com/images/pulpit.jpg" width="258" height="139" />
+	
+	<img src="images/logo.png" width="258" height="139" />
+	
+	<table border="1">
+    <tr>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 2</td>
+    </tr>
+    <tr>
+        <td>row 2, cell 1</td>
+        <td>row 2, cell 2</td>
+    </tr>
+    </table>
+
+	<ul>
+<li>Coffee</li>
+<li>Milk</li>
+</ul>
+
+<form>
+First name: <input type="text" name="firstname"><br>
+Last name: <input type="text" name="lastname">
+</form>
+
+<form>
+Password: <input type="password" name="pwd">
+</form>
+
+
+<iframe src="demo_iframe.htm" name="iframe_a"></iframe>
+<p><a href="http://www.runoob.com" target="iframe_a">RUNOOB.COM</a></p>
+
+
+<script>
+document.write("Hello World!");
+</script>
+
+<noscript>抱歉，你的浏览器不支持 JavaScript!</noscript>
+
+<button type="button" onclick="myFunction()">点我！</button>
+
 </body>
 </html>
